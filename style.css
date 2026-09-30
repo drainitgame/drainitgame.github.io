@@ -1,0 +1,72 @@
+/* Drain It site: Fredoka, bright gradient, chunky cards with a lip (same look as the game). */
+:root {
+  --ink: #3d2a6b;
+  --body: #6f5ba8;
+  --muted: #9b8cc4;
+  --lip: #bca6f8;
+  --green-top: #62d86a;
+  --green-bottom: #2fb54a;
+  --green-lip: #1f8a36;
+  --pink: #ff5b8e;
+}
+* { box-sizing: border-box; }
+html { background: #c393ff; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  color: var(--body);
+  background: linear-gradient(160deg, #ff9fd2 0%, #c393ff 45%, #7cc6ff 100%) fixed;
+  line-height: 1.55;
+  font-size: 17px;
+}
+a { color: var(--pink); font-weight: 600; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 18px 48px; }
+.title {
+  font-weight: 700;
+  color: #fff;
+  font-size: clamp(44px, 9vw, 72px);
+  line-height: 1.05;
+  margin: 12px 0 6px;
+  text-shadow: 0 3px 0 #d6b8ff, 0 6px 0 #a56cff, 0 9px 0 #7a3fe0, 0 12px 0 #5626a8, 0 16px 18px rgba(50, 20, 110, 0.45);
+}
+.card {
+  background: linear-gradient(#fff, #f2ecff);
+  border-radius: 28px;
+  box-shadow: 0 8px 0 var(--lip), 0 18px 30px rgba(20, 5, 60, 0.25);
+  padding: 28px 26px;
+  margin: 28px 0;
+}
+.card h1 { color: var(--ink); font-size: 32px; margin: 0 0 4px; }
+.card h2 { color: var(--ink); font-size: 22px; margin: 28px 0 6px; }
+.card p, .card li { margin: 8px 0; }
+.updated { color: var(--muted); font-size: 15px; margin: 0 0 12px; }
+.hero { text-align: center; }
+.hero img.icon { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 8px 0 rgba(86, 38, 168, 0.35), 0 16px 30px rgba(20, 5, 60, 0.3); }
+.pitch { color: #fff; font-size: 22px; font-weight: 600; text-shadow: 0 2px 0 rgba(80, 40, 170, 0.5); margin: 18px auto 26px; max-width: 520px; }
+.badge {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 12px 22px;
+  font-weight: 600;
+  box-shadow: 0 5px 0 #444;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(var(--green-top), var(--green-bottom));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 18px;
+  padding: 12px 24px;
+  font-weight: 700;
+  box-shadow: 0 6px 0 var(--green-lip);
+}
+.features { list-style: none; padding: 0; }
+.features li { padding-left: 34px; position: relative; }
+.features li::before { content: '💧'; position: absolute; left: 0; }
+nav.foot { text-align: center; margin-top: 30px; }
+nav.foot a { color: #fff; margin: 0 10px; text-shadow: 0 1px 0 rgba(80, 40, 170, 0.5); }
+.small { font-size: 14px; color: #fff; text-align: center; opacity: 0.9; }
